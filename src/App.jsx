@@ -17,8 +17,8 @@ function App() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const skills = ['AutoCAD', 'Civil 3D', 'Revit', 'SketchUp', 'Drafting', 'Site Planning'];
-  const specializations = ['Structural Drawings', 'Architectural Plans', 'Site Layouts', 'Construction Details'];
+  const skills = ['AutoCAD','SketchUp', 'Drafting'];
+  const specializations = ['Architectural Plans'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900 relative overflow-hidden">
@@ -182,25 +182,24 @@ function App() {
                     <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
                     Architectural Drafting
                   </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-400 rounded-full"></div>
-                    Structural Drawings
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
-                    Site Plan Development
-                  </div>
+                  
+                </div>                
+              </div>
+               <div className="space-y-4">
+                <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                  <Building size={18} className="text-teal-400" />
+                  Software Proficiency
+                </h3>
+                <div className="space-y-2 text-sm text-slate-300">
                   <div className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
-                    Construction Documentation
+                   D5 render 
                   </div>
-                </div>
-                
-                {/* Professional Status */}
-                <div className="flex items-center gap-2 mt-6 p-3 bg-green-500/20 rounded-lg border border-green-400/30">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm text-green-300 font-medium">Available for New Projects</span>
-                </div>
+                   <div className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                   Photoshop
+                  </div>
+                </div>                
               </div>
             </div>
           </div>
